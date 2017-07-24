@@ -1,0 +1,6 @@
+<launch>
+ <include file="$(find spacenav_node)/launch/classic.launch">
+  <!--- Change parameters here but generally things should be fine with the defaults -->
+ </include>
+  <node pkg="uarm_teleop_spacenav" type="uarm_spacenav.py" name="$(anon uarm_spacenav)" output="screen"/>
+</launch>
